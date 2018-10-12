@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Hospital Page</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="buttonActions.js"></script>
+	</head>
+	<body>
+	<div class="container-fluid">
+		<div>
+			<h1>Hospital DB</h1>
+			<ol id="myitems">
+			</ol>
+			<p id="myitemsP"></p>
+			<label>Get DB info: </label> <br>
+			<input type="button" id="dbInfo" value="DB Info ASC" />	<br>
+			<input type="button" id="dbInfoD" value="DB Info DSC" />	<br>
+			
+			<a href = 'http://localhost/DPN/hospital/hospitals.html'>Do you even hospital bro?</a>
+		</div>
+	
+		<div>
+			<h2>Add New Hospital</h2>
+			<label>Hospital Name: </label>
+			<input type="text" id="HName" /> <br>
+			<label>Hospital Address: </label>
+			<input type="text" id="HAddress" /> <br>
+			<label>Add Hospital Here: </label>
+			<input type="button" id="saveH" value="Add Hospital" />	
+		</div>
+		
+		<div>
+			<h2>Find a Hospital</h2>
+			<label>Hospital Name: </label>
+			<input type="text" id="HNameSEARCH" /> <br>
+			<label>Search Here: </label>
+			<input type="button" id="searchH" value="Search" />	
+			<p id="searchResults"></p>
+			<ol id="searchmyitems">
+			</ol>
+		</div>
+		
+		<div>
+			<h2>Update Hospital</h2>
+			<label>Hospital Name: </label>
+			<input type="text" id="HNameUPDATE" /> <br>
+			<label>Hospital Address: </label>
+			<input type="text" id="HAddressUPDATE" /> <br>
+			<label>Update Here: </label>
+			<input type="button" id="updateH" value="Update" />	
+		</div>
+		
+		<div>
+			<h2>Delete Hospital</h2>
+			<label>Hospital Name: </label>
+			<input type="text" id="HNameDELETE" /> <br>
+			<label>Delete Here: </label>
+			<input type="button" id="deleteH" value="Delete" />	
+		</div>
+		
+		<div>
+			<h2>Count Hospital</h2>
+			<label>Count the number of hospitals here: </label>
+			<input type="button" id="countH" value="Count" />	
+			<p id="countResults"></p>
+		</div>
+	<div>	
+	</body>
+</html>
